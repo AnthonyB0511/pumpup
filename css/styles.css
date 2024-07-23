@@ -53,7 +53,7 @@ header .contact i {
   color: black;
   padding: 0.5%;
   background-color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 60%;
   width: 2vw;
   height: 2vw;
@@ -65,7 +65,7 @@ header .contact i {
 }
 @media screen and (max-width: 900px) {
   header .contact i {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
 }
 header .contact i:hover {
@@ -245,6 +245,16 @@ main #services {
   width: 60%;
   padding: 3%;
 }
+@media screen and (max-width: 1000px) {
+  main #services {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main #services {
+    width: 90%;
+  }
+}
 main #services i {
   font-size: 3rem;
   text-align: center;
@@ -277,7 +287,7 @@ main #services .servicesContent {
 }
 @media screen and (max-width: 900px) {
   main #services .servicesContent {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 main #services .servicesContent img {
@@ -359,4 +369,9 @@ footer .contact i {
 footer .contact i:hover {
   transform: scale(1.1);
   background-color: #f9ae64;
+}
+@media screen and (max-width: 700px) {
+  footer .contact i {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */

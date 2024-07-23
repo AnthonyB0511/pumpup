@@ -59,7 +59,7 @@ header {
             color: black;
             padding: 0.5%;
             background-color: white;
-            font-size: 2rem;
+            font-size: 1.5rem;
             border-radius: 60%;
             width: 2vw;
             height: 2vw;
@@ -70,7 +70,7 @@ header {
             transition: .5s all ease;
 
             @media screen and (max-width:900px) {
-                font-size: 1.5rem;
+                font-size: 15px;
 
             }
 
@@ -287,6 +287,16 @@ main {
         width: 60%;
         padding: 3%;
 
+        @media screen and (max-width:1000px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width:900px) {
+            width: 90%;
+        }
+
+
+
         i {
             font-size: 3rem;
             text-align: center;
@@ -321,8 +331,9 @@ main {
             margin-block: 5%;
             width: 100%;
 
+
             @media screen and (max-width:900px) {
-                flex-direction: column;
+                flex-wrap: wrap;
             }
 
 
@@ -415,6 +426,11 @@ footer {
             &:hover {
                 transform: scale(1.1);
                 background-color: #f9ae64;
+            }
+
+            @media screen and (max-width:700px) {
+                font-size: 15px;
+
             }
         }
     }
