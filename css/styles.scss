@@ -329,20 +329,17 @@ main {
             margin-block: 5%;
             width: 100%;
 
-
-            @media screen and (max-width:900px) {
+            @media screen and (max-width: 900px) {
                 flex-wrap: wrap;
                 flex-direction: column;
             }
 
-
             img {
                 width: 50%;
 
-                @media screen and (max-width:900px) {
+                @media screen and (max-width: 900px) {
                     width: 100%;
                 }
-
             }
 
             .text {
@@ -355,13 +352,11 @@ main {
                 padding: 3%;
                 border-radius: 5px;
 
-                @media screen and (max-width:900px) {
+                @media screen and (max-width: 900px) {
                     width: 100%;
                     transform: translateX(0);
                     padding-inline: 5%;
                 }
-
-
 
                 button {
                     background-color: #f7eada;
@@ -369,7 +364,7 @@ main {
                     padding: 2%;
                     border-radius: 5px;
                     cursor: pointer;
-                    transition: all .5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
 
                     &:hover {
                         transform: scale(1.1);
@@ -378,6 +373,8 @@ main {
                 }
             }
         }
+
+
     }
 }
 
@@ -430,7 +427,7 @@ footer {
             }
 
             @media screen and (max-width:700px) {
-                font-size: 15px;
+                font-size: 12px;
 
             }
         }
