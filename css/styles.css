@@ -288,6 +288,7 @@ main #services .servicesContent {
 @media screen and (max-width: 900px) {
   main #services .servicesContent {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 main #services .servicesContent img {
@@ -311,6 +312,8 @@ main #services .servicesContent .text {
 @media screen and (max-width: 900px) {
   main #services .servicesContent .text {
     width: 100%;
+    transform: translateX(0);
+    padding-inline: 5%;
   }
 }
 main #services .servicesContent .text button {

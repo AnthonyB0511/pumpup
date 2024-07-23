@@ -295,8 +295,6 @@ main {
             width: 90%;
         }
 
-
-
         i {
             font-size: 3rem;
             text-align: center;
@@ -334,6 +332,7 @@ main {
 
             @media screen and (max-width:900px) {
                 flex-wrap: wrap;
+                flex-direction: column;
             }
 
 
@@ -358,6 +357,8 @@ main {
 
                 @media screen and (max-width:900px) {
                     width: 100%;
+                    transform: translateX(0);
+                    padding-inline: 5%;
                 }
 
 
