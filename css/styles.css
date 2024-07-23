@@ -63,6 +63,11 @@ header .contact i {
   cursor: pointer;
   transition: 0.5s all ease;
 }
+@media screen and (max-width: 900px) {
+  header .contact i {
+    font-size: 1.5rem;
+  }
+}
 header .contact i:hover {
   transform: scale(1.1);
   background-color: #5b0809;
@@ -83,9 +88,9 @@ main #histoire article {
   width: 50%;
   padding: 3%;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 1100px) {
   main #histoire article {
-    width: 75%;
+    width: 70%;
   }
 }
 main #histoire article i {
@@ -119,11 +124,6 @@ main #projets {
   flex-direction: column;
   width: 50%;
   padding: 3%;
-}
-@media screen and (max-width: 1200px) {
-  main #projets {
-    width: 80%;
-  }
 }
 main #projets i {
   font-size: 3rem;
@@ -163,8 +163,7 @@ main #projets article img:hover {
   transform: scale(1.1);
 }
 main #ambitions {
-  margin: 2% auto;
-  background-color: white;
+  padding-block: 3%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -204,18 +203,13 @@ main #ambitions .garage {
   margin: 3% auto;
   box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   main #ambitions .garage {
-    width: 80%;
+    width: 85%;
   }
 }
 main #ambitions .garage img {
   width: 75%;
-}
-@media screen and (max-width: 650px) {
-  main #ambitions .garage img {
-    width: 50%;
-  }
 }
 main #ambitions .garage aside {
   width: 25%;
@@ -224,11 +218,6 @@ main #ambitions .garage aside {
   flex-direction: column;
   justify-content: center;
   padding: 1%;
-}
-@media screen and (max-width: 650px) {
-  main #ambitions .garage aside {
-    width: 50%;
-  }
 }
 main #ambitions .garage aside h5 {
   text-align: right;
@@ -286,8 +275,18 @@ main #services .servicesContent {
   margin-block: 5%;
   width: 100%;
 }
+@media screen and (max-width: 900px) {
+  main #services .servicesContent {
+    flex-direction: column;
+  }
+}
 main #services .servicesContent img {
   width: 50%;
+}
+@media screen and (max-width: 900px) {
+  main #services .servicesContent img {
+    width: 100%;
+  }
 }
 main #services .servicesContent .text {
   box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
@@ -298,6 +297,11 @@ main #services .servicesContent .text {
   background-color: white;
   padding: 3%;
   border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+  main #services .servicesContent .text {
+    width: 100%;
+  }
 }
 main #services .servicesContent .text button {
   background-color: #f7eada;
@@ -351,11 +355,6 @@ footer .contact i {
   justify-content: center;
   cursor: pointer;
   transition: 0.5s all ease;
-}
-@media screen and (max-width: 800px) {
-  footer .contact i {
-    font-size: 1rem;
-  }
 }
 footer .contact i:hover {
   transform: scale(1.1);

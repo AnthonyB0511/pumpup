@@ -69,25 +69,30 @@ header {
             cursor: pointer;
             transition: .5s all ease;
 
+            @media screen and (max-width:900px) {
+                font-size: 1.5rem;
+
+            }
+
+
             &:hover {
                 transform: scale(1.1);
                 background-color: #5b0809;
             }
         }
     }
-
 }
 
 main {
-    // overflow-x: hidden;
+    // width: 100%;
 
     #histoire {
         background-image: url("../img/pattern.svg");
-        ;
-        // filter: invert(1);
         display: flex;
         justify-content: center;
         width: 100%;
+
+
 
         article {
             margin-block: 2%;
@@ -98,9 +103,8 @@ main {
             width: 50%;
             padding: 3%;
 
-            @media screen and (max-width: 766px) {
-                width: 75%;
-
+            @media screen and (max-width:1100px) {
+                width: 70%;
             }
 
             i {
@@ -108,7 +112,6 @@ main {
                 text-align: center;
                 margin-bottom: 20px;
                 color: #988f84;
-                // font-weight: 300;
             }
 
             h4 {
@@ -122,6 +125,7 @@ main {
 
             p {
                 text-align: center;
+                // font-size: 25px;
             }
 
             .line {
@@ -142,17 +146,11 @@ main {
         width: 50%;
         padding: 3%;
 
-        @media screen and (max-width: 1200px) {
-            width: 80%;
-
-        }
-
         i {
             font-size: 3rem;
             text-align: center;
             margin-bottom: 20px;
             color: #988f84;
-            // font-weight: 300;
         }
 
         h4 {
@@ -181,28 +179,27 @@ main {
             flex-wrap: wrap;
             width: 100%;
 
-
             img {
                 transition: all .5s ease-in-out;
                 cursor: pointer;
                 width: 33%;
 
                 &:hover {
-                    transform: scale(1.1)
+                    transform: scale(1.1);
                 }
             }
         }
-
     }
 
     #ambitions {
-        margin: 2% auto;
-        background-color: white;
+        padding-block: 3%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         width: 100%;
         background-color: #f7eada;
+
+
 
         .line {
             background-color: #988f84;
@@ -216,7 +213,6 @@ main {
             text-align: center;
             margin-bottom: 20px;
             color: #988f84;
-            // font-weight: 300;
         }
 
         h4 {
@@ -241,36 +237,23 @@ main {
             justify-content: center;
             margin: 3% auto;
 
-            @media screen and (max-width: 1200px) {
-                width: 80%;
-
+            @media screen and (max-width:1100px) {
+                width: 85%;
             }
 
             img {
                 width: 75%;
-
-                @media screen and (max-width: 650px) {
-                    width: 50%;
-
-                }
             }
 
             box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
 
             aside {
-
                 width: 25%;
                 background-color: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 padding: 1%;
-
-                @media screen and (max-width: 650px) {
-                    width: 50%;
-
-                }
-
 
                 h5 {
                     text-align: right;
@@ -291,11 +274,8 @@ main {
                     width: 100%;
                     align-self: center;
                 }
-
-
             }
         }
-
     }
 
     #services {
@@ -341,8 +321,18 @@ main {
             margin-block: 5%;
             width: 100%;
 
+            @media screen and (max-width:900px) {
+                flex-direction: column;
+            }
+
+
             img {
                 width: 50%;
+
+                @media screen and (max-width:900px) {
+                    width: 100%;
+                }
+
             }
 
             .text {
@@ -354,6 +344,12 @@ main {
                 background-color: white;
                 padding: 3%;
                 border-radius: 5px;
+
+                @media screen and (max-width:900px) {
+                    width: 100%;
+                }
+
+
 
                 button {
                     background-color: #f7eada;
@@ -371,7 +367,6 @@ main {
             }
         }
     }
-
 }
 
 footer {
@@ -384,7 +379,7 @@ footer {
     .contentFooter {
         width: 25%;
         background-color: white;
-        margin: 0 0 0 025%;
+        margin: 0 0 0 25%;
 
         p {
             padding: 1%;
@@ -395,9 +390,6 @@ footer {
     img {
         width: 50%;
         margin-bottom: 5%;
-
-
-
     }
 
     .contact {
@@ -420,16 +412,33 @@ footer {
             cursor: pointer;
             transition: .5s all ease;
 
-            @media screen and (max-width: 800px) {
-                font-size: 1rem
-            }
-
             &:hover {
                 transform: scale(1.1);
-                background-color: #f9ae64
+                background-color: #f9ae64;
             }
         }
     }
-
-
 }
+
+// @media screen and (max-width: 800px) {
+//     main {
+//         background-color: blue;
+
+//         #histoire {
+//             article {
+//                 width: 90%;
+//             }
+//         }
+
+//         #services {
+//             width: 75%;
+
+//             .servicesContent {
+//                 .text {
+//                     width: 50%;
+//                     align-items: baseline;
+//                 }
+//             }
+//         }
+//     }
+// }
