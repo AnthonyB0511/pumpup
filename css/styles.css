@@ -315,7 +315,7 @@ body main .services .servicesContent .text {
     padding-inline: 5%;
   }
 }
-body main .services .servicesContent .text button {
+body main .services .servicesContent button {
   background-color: #f7eada;
   border-color: #5b0809;
   padding: 2%;
@@ -323,7 +323,7 @@ body main .services .servicesContent .text button {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-body main .services .servicesContent .text button:hover {
+body main .services .servicesContent button:hover {
   transform: scale(1.1);
   background-color: #f9ae64;
 }
@@ -357,7 +357,7 @@ body footer .contact i {
   color: white;
   padding: 0.5%;
   background-color: #5b0809;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border-radius: 60%;
   width: 2vw;
   height: 2vw;
